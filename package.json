@@ -1,0 +1,29 @@
+{
+  "name": "echopulse-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jappreet",
+  "license": "MIT",
+  "scripts": {
+    "start": "node build/index",
+    "build": "tsc -p .",
+    "dev": "tsc-watch --onSuccess \"npm start\""
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/jsonwebtoken": "^9.0.6",
+    "prisma": "^5.11.0",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.10.1",
+    "@prisma/client": "^5.11.0",
+    "axios": "^1.6.8",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.1",
+    "graphql": "^16.8.1",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
